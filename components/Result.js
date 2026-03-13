@@ -81,8 +81,8 @@ const Result = ({navigation, route}) => {
         return localIcons.Low;
     }
   };
-useEffect(() => {
-  smtp(Email,Name,total,level);
+useEffect(async() => {
+ await smtp(Email,Name,total,level);
 
   
 }, [])
